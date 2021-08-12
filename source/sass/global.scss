@@ -1,0 +1,45 @@
+html {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  height: 100%;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 0;
+  background: $color-body-bg;
+  min-width: 320px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
+::-webkit-input-placeholder {
+  color: $color-title;
+}
+
+::placeholder {
+  color: $color-title;
+}

@@ -1,0 +1,140 @@
+.menu__wrapper {
+  position: relative;
+
+  @media (min-width: $tablet-width) {}
+
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    justify-content: space-between;
+  }
+}
+
+.menu__link {
+  display: block;
+  font-size: 18px;
+  line-height: 55px;
+  font-weight: bold;
+  color: $color-txt-link;
+  text-decoration: none;
+  background: $color-blue;
+  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+
+  &:hover {
+    background: $color-blue-hover;
+  }
+
+  &:active {
+    background: $color-blue-active;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    color: $color-title;
+    background: none;
+    box-shadow: none;
+    border: 0;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-blue;
+    }
+
+    &:active {
+      color: $color-title;
+      opacity: 0.3;
+    }
+  }
+}
+
+.menu__link--current {
+
+  @media (min-width: $tablet-width) {
+    color: $color-brown;
+    pointer-events: none;
+  }
+}
+
+.menu__item {
+  border-bottom: 1px solid $color-border;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    border: 0;
+    width: 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 20%;
+  }
+}
+
+
+.menu__item:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+  }
+}
+
+.menu--opened {
+  display: block;
+}
+
+.menu--closed {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+}
+
+.menu__nav-toggle {
+  position: absolute;
+  outline: 0;
+  width: 30px;
+  height: 30px;
+  bottom: 12px;
+  right: 16px;
+  border: 0;
+  padding: 0;
+  background: url(../img/icon-burger.svg) no-repeat center;
+
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.menu__nav-close {
+  display: none;
+  position: absolute;
+  outline: 0;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  right: 16px;
+  border: 0;
+  padding: 0;
+  background: url(../img/icon-close.svg) no-repeat center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

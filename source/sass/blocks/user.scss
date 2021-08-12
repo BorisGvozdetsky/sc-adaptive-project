@@ -1,0 +1,22 @@
+.user__title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  padding-bottom: 15px;
+}
+
+.user__text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  padding-bottom: 25px;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 464px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 0;
+  }
+}

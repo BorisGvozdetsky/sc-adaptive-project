@@ -1,0 +1,118 @@
+.welcome {
+  position: relative;
+  background-color: $color-blue;
+  background-image: url(../img/header-bg-mob@1x.jpg);
+  width: 100%;
+  min-height: 389px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+  background-size: cover;
+  padding: 50px 0;
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url(../img/header-bg-mob@2x.jpg);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 57px;
+    bottom: -2px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-image: url(../img/triangle.svg);
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    min-height: 518px;
+    margin-bottom: 44px;
+    background-image: url(../img/header-bg-tab@1x.jpg);
+    padding: 70px 0;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url(../img/header-bg-tab@2x.jpg);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+    background-image: url(../img/header-bg-des@1x.jpg);
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url(../img/header-bg-des@2x.jpg);
+    }
+  }
+}
+
+.welcome--small {
+  position: relative;
+  background-color: $color-blue;
+  background-image: url(../img/header-bg-mob@1x.jpg);
+  background-position-y: 100%;
+  width: 100%;
+  min-height: 157px;
+  background-repeat: no-repeat;
+  margin-bottom: 36px;
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url(../img/header-bg-mob@2x.jpg);
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 289px;
+    margin-bottom: 63px;
+    background-image: url(../img/header-bg-tab@1x.jpg);
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url(../img/header-bg-tab@2x.jpg);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 300px;
+    margin-bottom: 96px;
+    background-image: url(../img/header-bg-des@1x.jpg);
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url(../img/header-bg-des@2x.jpg);
+    }
+  }
+}
+
+.welcome--form {
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 108px;
+  }
+}
+
+.welcome__img {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
+  }
+}
+
+.welcome__img--small {
+
+  @media (min-width: $tablet-width) {
+    width: 457px;
+    height: 78px;
+  }
+}

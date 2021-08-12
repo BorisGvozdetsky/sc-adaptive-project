@@ -1,0 +1,135 @@
+.input {
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.input__label {
+  font-size: 14px;
+  line-height: 26px;
+  color: $color-txt;
+  padding-right: 17px;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 15px;
+  }
+}
+
+.input__input {
+  border: 0;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  line-height: 22px;
+  color: $color-title;
+  display: block;
+  width: 100%;
+  height: 58px;
+  background-color: $color-range-button;
+  padding: 0 20px;
+}
+
+.input--block {
+  display: block;
+  margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+
+  .input__label {
+    display: block;
+    width: 100%;
+    padding: 0 22px;
+    margin-bottom: 8px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+      width: auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+      margin-right: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding: 0;
+    padding-left: 77px;
+    padding-right: 40px;
+
+    &:first-child {
+      padding-right: 80px;
+    }
+  }
+}
+
+.input__wrapper {
+  display: block;
+
+  @media (min-width: $desktop-width) {}
+}
+
+.input__wrapper--phone {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.input__wrapper--phone::before {
+  position: absolute;
+  content: "";
+  display: block;
+  bottom: 0;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  background-color: $color-form-cell;
+  background-image: url(../img/form-phone.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.input__label--mail {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding-left: 15px;
+  padding-bottom: 8px;
+
+  @media (min-width: $desktop-width) {
+    flex-shrink: 0;
+  }
+}
+
+.input__wrapper--mail {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.input__wrapper--mail::before {
+  position: absolute;
+  content: "";
+  display: block;
+  bottom: 0;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  background-color: $color-form-cell;
+  background-image: url(../img/form-mail.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,37 @@
+.header {
+  position: relative;
+  background: $color-white;
+  flex-shrink: 0;
+  background-color: $color-white;
+  padding-bottom: 56px;
+
+  @media (min-width: $tablet-width) {
+    height: 56px;
+  }
+}
+
+.header__logo {
+  position: absolute;
+  bottom: -34px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+  }
+}
+
+.header__logo::after {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    content: "";
+    width: 187px;
+    height: 97px;
+    background-image: url(../img/logo-bg.svg);
+    transform: translate(-50%, 0%);
+    bottom: -7px;
+    left: 50%;
+    z-index: -1;
+  }
+}
